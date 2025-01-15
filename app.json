@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "React-Native",
-    "slug": "React-Native",
+    "slug": "react-native-standard",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -12,10 +12,23 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Poppins-Regular.ttf",
+            "./assets/fonts/Poppins-Thin.ttf"
+          ]
+        }
+      ]
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bahaa.standardapp"
     },
     "android": {
+      "package": "com.bahaa.standardapp",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -23,6 +36,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5dd1e321-9f2c-496d-8b4a-e9278ba145f2"
+      }
+    },
+    "owner": "bahaamoqayad17"
   }
 }
